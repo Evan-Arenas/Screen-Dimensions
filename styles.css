@@ -1,0 +1,18 @@
+footer,
+header {
+  height: 100px;
+  background-color: grey;
+}
+main {
+  height: 800px;
+  background: cadetblue;
+}
+#title_span {
+  font-size: 0.6em;
+  font-style: italic;
+}
+
+#display {
+  height: 300px;
+  background-color: white;
+}
