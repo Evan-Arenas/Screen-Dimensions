@@ -42,7 +42,6 @@
               type="text"
               placeholder="Width (px)"
               name=""
-              id=""
             />
             <input
               id="input_height"
@@ -50,7 +49,6 @@
               type="text"
               placeholder="Height (px)"
               name=""
-              id=""
             />
             <input
               id="input_diagonal"
@@ -58,7 +56,6 @@
               type="text"
               placeholder="Diagonal (in)"
               name=""
-              id=""
             />
             <input
               id="input_nickname"
@@ -66,7 +63,6 @@
               type="text"
               placeholder="Nickname (optional)"
               name=""
-              id=""
             />
           </div>
           <button id="input_add_button" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect ms-5">
@@ -75,155 +71,156 @@
         </div>
       </section>
 
-      <section class="mx-auto my-5">
-        <div id="section_list" class="d-flex flex-row flex-wrap justify-content-evenly">
-          <div class="list_card flex-fill px-2 mb-3">
-            <div class="card mdl-shadow--2dp">
-              <div class="card-header">
-                <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
-                <button class="list_close_button mdl-button mdl-js-button">
-                  <i class="material-icons">close</i>
-                </button>
-                <button class="list_amazon_button mdl-button mdl-js-button">
-                  <i class="material-icons">shop</i>
-                </button>
-              </div>
-              <div class="card-body">
-                <table class="table table-borderless table-sm mb-0">
-                  <col class="card_column_left" />
-                  <col class="card_column_right" />
-                  <tbody>
-                    <tr>
-                      <th scope="row">Diagonal (in)</th>
-                      <td id="card_inches_template1">12.9</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Resolution</th>
-                      <td id="card_resolution_template1">1920 × 1080</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (mm)</th>
-                      <td id="card_sizeMM_template1">68.5 × 121.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (in)</th>
-                      <td id="card_sizeIN_template1">2.7 × 4.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Aspect Ratio</th>
-                      <td id="card_aspect_template1">512:683</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">PPI</th>
-                      <td id="card_template1">325.6</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+      <section id="section_list" class="mx-auto my-5 d-flex flex-row flex-wrap justify-content-evenly">
+        <div class="list_card flex-fill px-2 mb-3">
+          <div class="card mdl-shadow--2dp">
+            <div class="card-header">
+              <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
+              <button class="list_close_button mdl-button mdl-js-button">
+                <i class="material-icons">close</i>
+              </button>
+              <button class="list_amazon_button mdl-button mdl-js-button">
+                <i class="material-icons">shop</i>
+              </button>
+            </div>
+            <div class="card-body">
+              <table class="table table-borderless table-sm mb-0">
+                <col class="card_column_left" />
+                <col class="card_column_right" />
+                <tbody>
+                  <tr>
+                    <th scope="row">Diagonal (in)</th>
+                    <td id="card_inches_template1">12.9</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Resolution</th>
+                    <td id="card_resolution_template1">1920 × 1080</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (mm)</th>
+                    <td id="card_sizeMM_template1">68.5 × 121.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (in)</th>
+                    <td id="card_sizeIN_template1">2.7 × 4.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Aspect Ratio</th>
+                    <td id="card_aspect_template1">512:683</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PPI</th>
+                    <td id="card_template1">325.6</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+        </div>
 
-          <div class="list_card flex-fill px-2 mb-3">
-            <div class="card mdl-shadow--2dp">
-              <div class="card-header">
-                <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
-                <button class="list_close_button mdl-button mdl-js-button">
-                  <i class="material-icons">close</i>
-                </button>
-                <button class="list_amazon_button mdl-button mdl-js-button">
-                  <i class="material-icons">shop</i>
-                </button>
-              </div>
-              <div class="card-body">
-                <table class="table table-borderless table-sm mb-0">
-                  <col class="card_column_left" />
-                  <col class="card_column_right" />
-                  <tbody>
-                    <tr>
-                      <th scope="row">Diagonal (in)</th>
-                      <td id="card_inches_template1">12.9</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Resolution</th>
-                      <td id="card_resolution_template1">1920 × 1080</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (mm)</th>
-                      <td id="card_sizeMM_template1">68.5 × 121.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (in)</th>
-                      <td id="card_sizeIN_template1">2.7 × 4.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Aspect Ratio</th>
-                      <td id="card_aspect_template1">512:683</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">PPI</th>
-                      <td id="card_template1">325.6</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <div class="list_card flex-fill px-2 mb-3">
+          <div class="card mdl-shadow--2dp">
+            <div class="card-header">
+              <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
+              <button class="list_close_button mdl-button mdl-js-button">
+                <i class="material-icons">close</i>
+              </button>
+              <button class="list_amazon_button mdl-button mdl-js-button">
+                <i class="material-icons">shop</i>
+              </button>
+            </div>
+            <div class="card-body">
+              <table class="table table-borderless table-sm mb-0">
+                <col class="card_column_left" />
+                <col class="card_column_right" />
+                <tbody>
+                  <tr>
+                    <th scope="row">Diagonal (in)</th>
+                    <td id="card_inches_template1">12.9</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Resolution</th>
+                    <td id="card_resolution_template1">1920 × 1080</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (mm)</th>
+                    <td id="card_sizeMM_template1">68.5 × 121.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (in)</th>
+                    <td id="card_sizeIN_template1">2.7 × 4.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Aspect Ratio</th>
+                    <td id="card_aspect_template1">512:683</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PPI</th>
+                    <td id="card_template1">325.6</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+        </div>
 
-          <div class="list_card flex-fill px-2 mb-3">
-            <div class="card mdl-shadow--2dp">
-              <div class="card-header">
-                <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
-                <button class="list_close_button mdl-button mdl-js-button">
-                  <i class="material-icons">close</i>
-                </button>
-                <button class="list_amazon_button mdl-button mdl-js-button">
-                  <i class="material-icons">shop</i>
-                </button>
-              </div>
-              <div class="card-body">
-                <table class="table table-borderless table-sm mb-0">
-                  <col class="card_column_left" />
-                  <col class="card_column_right" />
-                  <tbody>
-                    <tr>
-                      <th scope="row">Diagonal (in)</th>
-                      <td id="card_inches_template1">12.9</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Resolution</th>
-                      <td id="card_resolution_template1">1920 × 1080</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (mm)</th>
-                      <td id="card_sizeMM_template1">68.5 × 121.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Size (in)</th>
-                      <td id="card_sizeIN_template1">2.7 × 4.8</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Aspect Ratio</th>
-                      <td id="card_aspect_template1">512:683</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">PPI</th>
-                      <td id="card_template1">325.6</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+        <div class="list_card flex-fill px-2 mb-3">
+          <div class="card mdl-shadow--2dp">
+            <div class="card-header">
+              <h5 class="d-inline-block m-0">24" 1080p Monitor</h5>
+              <button class="list_close_button mdl-button mdl-js-button">
+                <i class="material-icons">close</i>
+              </button>
+              <button class="list_amazon_button mdl-button mdl-js-button">
+                <i class="material-icons">shop</i>
+              </button>
+            </div>
+            <div class="card-body">
+              <table class="table table-borderless table-sm mb-0">
+                <col class="card_column_left" />
+                <col class="card_column_right" />
+                <tbody>
+                  <tr>
+                    <th scope="row">Diagonal (in)</th>
+                    <td id="card_inches_template1">12.9</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Resolution</th>
+                    <td id="card_resolution_template1">1920 × 1080</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (mm)</th>
+                    <td id="card_sizeMM_template1">68.5 × 121.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Size (in)</th>
+                    <td id="card_sizeIN_template1">2.7 × 4.8</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Aspect Ratio</th>
+                    <td id="card_aspect_template1">512:683</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">PPI</th>
+                    <td id="card_template1">325.6</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </section>
 
       <section id="section_display" class="mx-auto my-5">
-        <nav class="position-relative">
+        <header class="position-relative">
           <button>Swap Orientation</button>
           <button>Sort by...</button>
-          <input type="radio" name="compareBy" id="" />Compare Size <input type="radio" name="compareBy" id="" />Compare
-          Resolution
-        </nav>
+          <input type="radio" name="compareBy" id="compare_by_size" />
+          <label for="compare_by_size">Compare Size</label>
+          <input type="radio" name="compareBy" id="compare_by_resolution" />
+          <label for="compare_by_resolution">Compare Resolution</label>
+        </header>
+        <div id="display_content_container"></div>
       </section>
     </div>
 

@@ -1,6 +1,6 @@
 /* -------------------------------------- */
 /* -------------------------------------- */
-/* -------------HTML Defaults------------ */
+/* ------------ HTML Defaults ----------- */
 /* -------------------------------------- */
 /* -------------------------------------- */
 * {
@@ -9,7 +9,7 @@
 
 /* -------------------------------------- */
 /* -------------------------------------- */
-/* ----------Document Structure---------- */
+/* ------------ DOM Structure ----------- */
 /* -------------------------------------- */
 /* -------------------------------------- */
 #header_nav {
@@ -22,7 +22,6 @@
 #body_content_container {
   max-width: 1200px;
 }
-
 #section_display {
   border: 4px dashed blue;
   height: 600px;
@@ -32,10 +31,12 @@
 button:focus {
   outline: none; /* Removes Bootstrap's default button focus outlining */
 }
-
+input:focus {
+  outline-color: yellow;
+}
 /* -------------------------------------- */
 /* -------------------------------------- */
-/* ----------#section_list Cards---------- */
+/* -------- #section_list Cards --------- */
 /* -------------------------------------- */
 /* -------------------------------------- */
 .list_card {
@@ -49,6 +50,13 @@ button:focus {
   top: 0;
   right: 0;
   color: white;
+  z-index: 1;
+  /* z-index positions the transparent button container in front of the icon */
+}
+i.material-icons {
+  position: relative;
+  z-index: -1;
+  /* z-index positions the icon behind the transparent button container */
 }
 .list_amazon_button {
   position: absolute;
@@ -64,4 +72,16 @@ button:focus {
 .card_column_left,
 .card_column_right {
   width: 50%;
+}
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* ---------- CSS3 Transitions ---------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+.fade_out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s ease-in-out;
 }

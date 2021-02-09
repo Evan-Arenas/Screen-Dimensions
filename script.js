@@ -3,7 +3,18 @@ function $(id) {
   return document.getElementById(id);
 }
 
+function removeSectionListItemFromDOM(ggp) {
+  ggp.classList.add('fade_out');
+  setTimeout(function () {
+    ggp.style.display = 'none';
+  }, 500);
+}
+
 window.onload = function () {
+  // Global Variables
+  let arraySectionList = [];
+  // End: Global Variables
+
   // On Click Event Handler for '+' Button
   $('input_add_button').onclick = function () {
     // Local Variables
@@ -27,8 +38,8 @@ window.onload = function () {
     // End: Data Validation
 
     // Calculations
-    aspectRatio[0] = inputWidth / math.gcd(inputWidth, inputHeight);
-    aspectRatio[1] = inputHeight / math.gcd(inputWidth, inputHeight);
+    aspectRatio[0] = inputWidth / math.gcd(inputWidth, inputHeight); /* utilizing math.js dependency */
+    aspectRatio[1] = inputHeight / math.gcd(inputWidth, inputHeight); /* utilizing math.js dependency */
     widthInInches =
       aspectRatio[0] *
       Math.sqrt(Math.pow(inputDiagonal, 2) / (Math.pow(aspectRatio[0], 2) + Math.pow(aspectRatio[1], 2)));
@@ -59,4 +70,17 @@ window.onload = function () {
     $('section_list').innerHTML = sectionListHTML;
     // End: Create the HTML element using string concatenation
   };
+
+  // Add click event listener for #section_list
+  $('section_list').addEventListener('click', function (e) {
+    // e.target returns the clicked element, where 'e' contains the coordinates of the event
+
+    // if the clicked element is a close button...
+    if (e.target && e.target.matches('button.list_close_button')) {
+      // ...Remove its great-grandparent element from the DOM
+      let greatGrandParent = e.target.parentElement.parentElement.parentElement;
+      //greatGrandParent.style.display = 'none';
+      removeSectionListItemFromDOM(greatGrandParent);
+    }
+  });
 };
